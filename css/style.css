@@ -1,17 +1,45 @@
 body{
     margin: 0;
+    padding: 0;
 }
-nav{
+.nav_container{
+    padding: 15px;
     display: flex;
     justify-content:space-around;
-    max-height: 100px;
+    align-items: center;
+    height: 200px;
 }
-ul{
+.logo{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav > ul{
     list-style-type: none;
 }
-li{
-    display: inline;
+a{
+    margin: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav > ul > li{
+    display: inline-block;
 }
 img{
-    height: 100%;
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 15px;
+    max-height: 200px;
+    animation-name: circle-to-square;
+    animation-duration: 1s;
+    box-shadow: 0px 0px 20px 4px black;
+}
+@keyframes circle-to-square {
+    from {
+        height: 100px;
+    }
+    to {
+        height: 200px;
+    }
 }
